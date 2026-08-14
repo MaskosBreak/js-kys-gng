@@ -10,8 +10,12 @@ export default function Cards() {
             </TouchableOpacity>
 
             <View style={s.nav}>
-                <Image source={require('../assets/icons/left.png')}/>
-                <Image source={require('../assets/icons/right.png')}/>
+                <TouchableOpacity onPress={() => router.push('/unity')}>
+                    <Image source={require('../assets/icons/left.png') }/>
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => router.push('/scam')}>
+                    <Image source={require('../assets/icons/right.png')}/>
+                </TouchableOpacity>
             </View>
 
 
